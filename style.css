@@ -1,0 +1,204 @@
+body {
+    background-image: url(res/javabackground.gif);
+    font-family: Verdana, arial, sans-serif;
+}
+
+img {max-width: 100%; height: auto;}
+
+.main-grid {
+    grid-template-columns: 200px auto;
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "sidebar content"
+        "footer footer";
+    width: 80%;
+    min-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 5px 5px 5px #2E0000;
+}
+.grid-1 {
+    grid-area: header;
+    background-color: #D2B48C;
+    /* height: 100px; */
+    justify-content: center;
+    align-content: cente;
+
+}
+.grid-1 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.grid-2 {
+    grid-area: sidebar;
+    background-color: #e2d2b0;
+    text-align: center;
+	font-weight: bold;
+	float: left;
+
+}
+.grid-2 ul {
+    list-style-type: none;
+	padding-left: 0;
+	font-size: 1.2em;
+}
+a {
+    text-decoration: none;
+}
+a:link {
+    color: #795249;
+}
+a:visited {
+	color: #A58366;
+}
+a:hover {
+	color: #f5f5dc;
+}
+
+.grid-3 {
+    grid-area: content;
+    display: flex;
+    flex-direction: row;
+    background-color: #f5f5dc;
+    padding-left: 40px;
+    padding-bottom: 40px;
+
+}
+.content1 {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+.content1 h2 {
+    color:#2E0000;
+    font-size: 30px;
+}
+.content2 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 60px;
+    padding-top: 80px;
+}
+.content2 ul {
+    list-style-position: inside;
+    padding: 0;
+    margin: 0;
+
+}
+.content2 li {
+    color:#2E0000;
+    margin: 0;
+	padding: 10px 0px 0px 40px;
+	list-style: none;
+	background-image: url("res/coffee.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 30px;
+}
+p { 
+    padding-top: 40px;
+    color:#2E0000;
+}
+
+.grid-4 {
+    grid-area: footer;
+    background-color: #D2B48C;
+    text-align: center;
+    padding: 20px;
+    font-size: .6em;
+	font-style: italic;
+}
+
+/* MENU */
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    color: #2E0000;
+
+}
+
+table {
+	margin: auto;
+	width: 80%;
+}
+
+td, th {
+	padding: 10px;
+}
+
+tr:nth-of-type(odd) {
+	background-color: #D2B48C;
+} 
+
+/* MUSIC */
+
+#music {
+    display: flex;
+    flex-direction: column;
+    color: #2E0000;
+
+}
+h3 {background-color: #e2d2b0;}
+#music p {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10px;
+    
+}
+#music img {
+    float: left;
+    max-width: 100%;
+    height: 100px;
+    padding-right: 40px;
+	padding-left: 40px;
+
+}
+section {
+	overflow: auto;
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+/* Jobs */
+
+#jobs {
+    display: flex;
+    flex-direction: column;
+    color: #2E0000;
+}
+#jobs p {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 20px;
+}
+
+label {
+	float: left;
+	display: block;
+	text-align: right;
+	width: 120px;
+	padding-right: 2em;
+}
+
+input, textarea {
+	display: block;
+	margin-bottom: 20px;
+}
+
+
+
+
+
+/* Sources 
+
+https://www.deviantart.com/vicgeraldine/art/Zayn-Malik-png-668448568
+https://www.deviantart.com/s-udenaz/art/Taylor-Swift-PNG-516022172
+https://www.fesliyanstudios.com/royalty-free-sound-effects-download/horse-262
+
+*/
