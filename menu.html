@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Menu</title>
+    <script src="calPrice.js"></script>
 </head>
 <body>
     <div class="main-grid">
@@ -31,22 +32,78 @@
                 <table>
                     <tr>
                         <th>Just Java</th>
-                        <td>Regular house blend, decaffeinated coffee, or flavor of the day. <br>
-                            Endless Cup $2.00
+                        <td>Regular house blend, decaffeinated coffee, or flavor of the day.
+                            <form name = "JavaText" id="menu-form">
+                                <input type = "radio" id = "justjava" checked="checked" onchange = "calPrice();"/>
+                                <label id="radiolabel" for="justjava">Endless Cup $2.00</label>
+                            </form>
                         </td>
+                        <td>
+                            <input type="text" id="javaCount" size="1" name="javaCount" onchange="calPrice();"/>
+                        </td>
+                        <div style="position: absolute; left: 100px; top: 50px;"></div>
+                        <td >
+                            <div id="last">
+                                <label id="textlabel" for="javaPrice">$</label>
+                                <input type="text" size="1" id="javaPrice" name="javaPrice" onfocus="this.blur();"/>
+                            </div>
+                        </td>
+
                     </tr>
                 
                     <tr>
                         <th>Cafe au Lait</th>
                         <td>House blended coffee infused into a smooth, steamed milk. <br>
-                            Single $2.00 Double $3.00
+                                <form name = "JavaText" id="menu-form">
+                                    <input type = "radio" name="javacafe" id = "cafe1" checked="checked" onchange = "calPrice();"/>
+                                    <label id="menulabel" for="cafe1">Single $2.00</label>
+                                    <input type = "radio" name="javacafe"  id = "cafe2"  onchange = "calPrice();"/>
+                                    <label id="menulabel" for="cafe2">Double $3.00</label>
+                                </form>
+                        </td>
+                        <td>
+                            <input type="text" id="cafeCount" size="1" name="cafeCount" onchange="calPrice();"/>
+                        </td>
+                        <div style="position: absolute; left: 100px; top: 50px;"></div>
+                        <td >
+                            <div id="last">
+                                <label id="textlabel" for="cafePrice">$</label>
+                                <input type="text" size="1" id="cafePrice" name="cafePrice" onfocus="this.blur();"/>
+                            </div>
                         </td>
                     </tr>
                 
                     <tr>
                         <th>Iced Cappucino</th>
                         <td>Sweetened espresso blended with icy-cold milk and served in a chilled glass. <br>
-                            Single $4.75 Double $5.75 
+                            <form name = "JavaText" id="menu-form">
+                                <input type = "radio" name="capcafe" id = "cap1" checked="checked" onchange = "calPrice();"/>
+                                <label id="menulabel" for="cap1">Single $4.75</label>
+                                <input type = "radio" name="capcafe" id = "cap2" onchange = "calPrice();"/>
+                                <label id="menulabel" for="cap2">Double $5.75</label>
+                            </form>
+                        </td>
+                        <td>
+                            <input
+                             type="text" id="capCount" size="1" name="capCount" onchange="calPrice();"/>
+                        </td>
+                        <div style="position: absolute; left: 100px; top: 50px;"></div>
+                        <td >
+                            <div id="last">
+                                <label id="textlabel" for="capPrice">$</label>
+                                <input type="text" size="1" id="capPrice" name="capPrice" onfocus="this.blur();"/>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <th>Total <br> Price: </th>
+                        <td>
+                            <div id="last">
+                                <label id="textlabel" for="totalPrice">$</label>
+                                <input type="text" size="1" id="totalPrice" name="totalPrice" onfocus="this.blur();"/>
+                            </div>
                         </td>
                     </tr>
                 </table>

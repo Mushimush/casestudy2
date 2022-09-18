@@ -135,6 +135,39 @@ td, th {
 tr:nth-of-type(odd) {
 	background-color: #D2B48C;
 } 
+#menu-form {   
+    padding-top: 5px;
+}
+#menulabel {
+    float: left;
+    clear: none;
+    padding-left: 5px;
+  }
+input[type=radio] {
+    float: left;
+    clear: none;
+}
+
+table input[type=text] {
+    width: 100%;
+    padding: 3px 5px;
+    margin: 4px 0;
+    box-sizing: border-box;
+  }
+#textlabel {
+    margin: 8px 0;
+
+    padding-right: 5px;
+}
+#last {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    padding: 5px;
+
+}
+
+
 
 /* MUSIC */
 
@@ -178,7 +211,7 @@ section {
     padding-bottom: 20px;
 }
 
-label {
+#jobsform label {
 	float: left;
 	display: block;
 	text-align: right;
